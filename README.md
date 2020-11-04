@@ -1,3 +1,5 @@
+Python3 port for https://github.com/steinbro/hyperviseme
+
 A "viseme" is a visual phoneme, the visual rather than aural information
 conveyed when speaking -- in simple terms, lip reading. While there are about
 forty phonemes in the English language, there are only about a dozen visemes
@@ -16,17 +18,6 @@ to-viseme mapping. We then invert this mapping to get a homoviseme list.
 
 Give it a try:
 
-    make hyperviseme phrase="crazy"
+    ./download_dict.sh
+    python3 extract_similar_phrase.py "Donald Trump"
 
-Some nice examples:
-
-* yale college -> hancock itch
-* the look of love -> tycoon of knife
-* one more time -> wine boredom
-*  time to check out -> subdue jackass
-
-
-BSD licensed. 
-
----
-Daniel W. Steinbrook <dsteinbrook@gmail.com>
